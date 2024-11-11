@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+}
+
+text {
+    color: #f3f3f3;
+    font-family: 'Rubik', serif;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0 20px 0 0;
+    background: #161f26;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #364764;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: #364764;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #101419;
+    height: 100vh;
+    text-align: left;
+}
+
+.chat {
+    border-radius: 10px;
+    width: 90vw;
+    margin: 10px;
+}
+
+.chatbox {
+    border-radius: 20px 20px 0 0;
+    height: 75vh;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: auto;
+    border: 2px solid #181c1f;
+    border-bottom: none;
+    background-color: #1c252c;
+}
+
+.message {
+    border-top: 2px solid #181c1f;
+    margin-bottom: 20px;
+    color: #f3f3f3;
+    overflow-wrap: break-word;
+}
+
+.info {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.info .author {
+    color: #f3f3f3;
+    font-size: 1.8rem;
+    font-family: 'Rubik', serif;
+    font-weight: bold;
+}
+
+.info .time {
+    margin-left: auto;
+    margin-right: 10px;
+    color: #f3f3f3;
+    font-size: 1.2rem;
+    font-family: 'Rubik', serif;
+}
+
+.message .text {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    font-family: 'Rubik', serif;
+}
+
+.message-form {
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    color: #f3f3f3;
+
+    overflow: auto;
+    resize: none;
+    padding: 5px 10px 10px;
+    font-size: 1.5rem;
+    position: relative;
+    border: 2px solid #181c1f;
+    background-color: #161f26;
+    box-sizing: border-box;
+}
+
+.message-form:focus {
+    outline: none;
+    border: 2px solid #181c1f;
+}
+
+.username-text {
+    color: #f3f3f3;
+    font-size: 2rem;
+    font-family: 'Rubik', serif;
+}
+
+.username {
+    color: #000000;
+    resize: none;
+    font-size: 2rem;
+    font-family: 'Rubik', serif;
+}
